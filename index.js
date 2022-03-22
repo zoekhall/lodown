@@ -177,7 +177,8 @@ module.exports.each = each;
 module.exports.unique = unique; 
 
 /**
- * filter: Takes in an array and a function and calls that function for each element in the array determining whether the function called on the element will return true
+ * filter: Each element in the array is passed through a tester function. 
+ * If it returns true, the element is included in the output array. 
  * 
  * @param {an array} arr: Has a parameter representing an array.
  * @param {function} func: Has a paramater representing a callback function. 
@@ -197,7 +198,8 @@ module.exports.unique = unique;
 module.exports.filter = filter; 
 
 /**
- * reject: Takes in an array and a function and calls that function for each element in the array determining whether the function called on the element will return false
+ * reject: Each element in the array is passed through a tester function. 
+ * If it returns false, the element is included in the output array. 
  * 
  * @param {an array} arr: Has a parameter representing an array.
  * @param {function} func: Has a paramater representing a callback function. 
